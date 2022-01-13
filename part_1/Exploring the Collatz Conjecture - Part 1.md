@@ -7,19 +7,7 @@
 
 <p>The Collatz conjecture can be expressed simply in a piecewise function:</p>
 
-
-$$
-\begin{equation*}
-f(n) = \left\{
-        \begin{array}{ll}
-            \frac{n}{2} & \quad \text{if }n\text{ is even}\\
-            3n+1 & \quad \text{if }n \text{ is odd}
-        \end{array}
-    \right.
-\end{equation*}
-$$
-
-
+![Collatz Function](part1/collatz_function.png)
 
 <p>The numbers that result from a Collatz sequence are known as "Hailstone Numbers", due to their rising and falling behavior similar to that of hail in a cloud. The Collatz conjecture states that the total stopping time of every positive integer is finite, and eventually ends in 4, 2, 1.</p>
 
@@ -40,15 +28,15 @@ unsigned int collatz(unsigned int n){
 
 <p>When this function is called over and over again, a Collatz sequence for a given number can be modeled. What is especially interesting about the Collatz sequence is that a number's distance from another number has no affect on the number of steps it will take to reduce to 1. The graph below models the stopping time for 341. After it spikes to 1024, it quickly reduces to 4, 2 finally 1.</p>
 
-![341](C:\Users\Jacob DeNelsky\Nextcloud\CS 212 - C Programming\collatz_prod\341.png)
+![Stopping Time for 341](https://github.com/jdene/collatz-conjecture/blob/main/part_1/gnuplot/341.png)
 
 <p>The next plot shows the path taken by 342. While this is just 1 away from 341, it's path looks vastly different. Collatz sequences don't seem to have any obvious relationship to numbers that are close sequentially. But can any pattern be found in Collatz stopping times?</p>
 
-![342](C:\Users\Jacob DeNelsky\Nextcloud\CS 212 - C Programming\collatz_prod\342.png)
+![Stopping Time for 342](https://github.com/jdene/collatz-conjecture/blob/main/part_1/gnuplot/342.png)
 
 <p>Another possible way to visualize the Collatz function is by examining each input to the function, and the corresponding number of steps it takes to "stop", or to decay to the 4-2-1 loop. Below is a plot showing inputs to the Collatz function from 1 to 1000 and each value's corresponding stopping time.</p>
 
-![stoppingtime](C:\Users\Jacob DeNelsky\Nextcloud\CS 212 - C Programming\collatz_prod\stoppingtime.png)
+![1 to 1000 Stopping Time](https://github.com/jdene/collatz-conjecture/blob/main/part_1/gnuplot/stoppingtime.png)
 
 <p>Observing the graph above, there appear to be clear discrete bands which seem to follow the same general trend as that of an exponential decay function.</p>
 
