@@ -6,9 +6,9 @@
 
 
 <p>The Collatz conjecture can be expressed simply in a piecewise function:</p>
-
-<img src="https://github.com/jdene/collatz-conjecture/blob/main/part_1/collatz_function.png" alt="Collatz Function" width="400" class="center"/>
-
+<p align="center">
+<img src="https://github.com/jdene/collatz-conjecture/blob/main/part_1/collatz_function.png" alt="Collatz Function" width="300"/>
+</p>
 <p>The numbers that result from a Collatz sequence are known as "Hailstone Numbers", due to their rising and falling behavior similar to that of hail in a cloud. The Collatz conjecture states that the total stopping time of every positive integer is finite, and eventually ends in 4, 2, 1.</p>
 
 <p>The piecewise function above can modeled using a simple function in C with only a single line of code. Alternatively, this can be achieved using a simple if-else statement, but this implementation greatly reduces the amount of code needed. The ternary operator can be used to construct an if-else statement using the following syntax:</p>
