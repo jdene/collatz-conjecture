@@ -7,7 +7,7 @@
 
 <p>The Collatz conjecture can be expressed simply in a piecewise function:</p>
 
-<img src="https://github.com/jdene/collatz-conjecture/blob/main/part_1/collatz_function.png" alt="Collatz Function" width="200"/>
+<img src="https://github.com/jdene/collatz-conjecture/blob/main/part_1/collatz_function.png" alt="Collatz Function" width="400" class="center"/>
 
 <p>The numbers that result from a Collatz sequence are known as "Hailstone Numbers", due to their rising and falling behavior similar to that of hail in a cloud. The Collatz conjecture states that the total stopping time of every positive integer is finite, and eventually ends in 4, 2, 1.</p>
 
