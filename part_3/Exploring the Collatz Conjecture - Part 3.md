@@ -70,23 +70,23 @@ def custom_collatz_slim(n, base):
 
 I originally thought that maybe only bases that are prime numbers would work, but it turns out that the numbers which worked as bases were fairly uniformly distributed. Below are histograms for stopping times of various bases, with starting values from 1 to 2000. The first plot, base 2, shows stopping times for effectively what is the original Collatz Conjecture. The other bases show what happens for other bases using the generalized conjecture. I also generated a larger plot showing histograms for all working bases below 100, which can be viewed here.
 
-![10_bases_histogram](C:\Users\Jacob DeNelsky\Nextcloud\collatz_article\graphs\python\part3\6_bases_histogram.png)
+![6_bases_histogram](https://github.com/jdene/collatz-conjecture/blob/main/part_3/plots/6_bases_histogram.png)
 
 The histogram below shows Collatz sequences from 1 to 2000 and the stopping time for each Collatz sequence. The blue plot shows the standard Collatz sequence, with a base of 2, and the orange plot shows the generalized Collatz function using a base of 7. Similarly, the second histogram shows the same plot for base of 2, and base of 98. While the plots for base of 7 and base of 98 are both shifted, they both seem to have clear discrete bands. 
 
-![histogram_2_7](C:\Users\Jacob DeNelsky\Nextcloud\collatz_article\graphs\python\part3\histogram_2_7.png)
+![histogram_2_7](https://github.com/jdene/collatz-conjecture/blob/main/part_3/plots/histogram_2_7.png)
 
-![histogram_2_98](C:\Users\Jacob DeNelsky\Nextcloud\collatz_article\graphs\python\part3\histogram_2_98.png)
+![histogram_2_98](https://github.com/jdene/collatz-conjecture/blob/main/part_3/plots/histogram_2_98.png)
 
 The next part of my investigation was focused on verifying if the infrequency of multiples of base+1 holds using the generalized Collatz function. I decided to choose a base of 7, meaning I would hypothesize that all numbers that are multiples of 8 would be infrequent. After plotting the data generated, it turns out that this is the case.
 
-![freq_of_mult_8](C:\Users\Jacob DeNelsky\Nextcloud\collatz_article\graphs\python\part3\freq_of_mult_8.png)
+![freq_of_mult_8](https://github.com/jdene/collatz-conjecture/blob/main/part_3/plots/freq_of_mult_8.png)
 
 In the above plot, all multiples of 8 are shown in red. Multiples of 8 have significantly lower frequencies in the first 1000 Collatz sequences using this modified function.
 
 The plot below shows the distribution of multiples of the first ten multiples of 8. Values of 1 represent starting numbers of "Collatz" sequences which contain the specific multiple of 8. For example, 8 occurs in three of the first 1000 sequences of this "Collatz" function, and 80 occurs in two.
 
-![distribution_of_mult_8](C:\Users\Jacob DeNelsky\Nextcloud\collatz_article\graphs\python\part3\distribution_of_mult_8.png)
+![distribution_of_mult_8](https://github.com/jdene/collatz-conjecture/blob/main/part_3/plots/distribution_of_mult_8.png)
 
 What all of this data means, is that the infrequency of bases holds for other bases besides 2. Effectively, the Collatz Conjecture can be extended to many different bases, and the properties which appear in the original conjecture are also present in the generalized conjecture.
 
